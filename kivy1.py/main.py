@@ -84,7 +84,7 @@ MDNavigationLayout:
                             icon: "folder"
 
                     OneLineIconListItem:
-                        text: "Logout"
+                        text: "Logout app"
                         IconLeftWidget:
                             icon: "logout"
 """
