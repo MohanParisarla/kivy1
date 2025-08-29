@@ -21,21 +21,21 @@ MDNavigationLayout:
 
                 ScrollView:
                     MDBoxLayout:
-                          
+
                         orientation: 'horizontal'
                         size_hint_y: None
                         height: self.minimum_height
                         padding: "20dp","16dp"
                         spacing: "13dp"
                         pos_hint: {"center_y": .5}
-                        
-                        
+
+
                         Image:
                             source: "demoq.jpg"
                             size_hint_y: None
                             height:"150dp"
-                            
-                           
+
+
                         Image:
                             source: "demoq.jpg"
                             size_hint_y: None
@@ -89,10 +89,12 @@ MDNavigationLayout:
                             icon: "logout"
 """
 
+
 class DemoApplication(MDApp):
     def build(self):
         self.theme_cls.primary_palette = "Blue"
 
         return Builder.load_string(navigation_helper)
+
 
 DemoApplication().run()
